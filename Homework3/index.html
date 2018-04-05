@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FBU Hacker's club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <body>
+
+    <div class="main-nav">
+        <ul class="nav">
+          <li class="name">Homepage</li>
+		  <li><a href="index.html">Homepage</a></li>
+          <li><a href="Hackers.html">Hackers</a></li>
+          <li><a href="EventsPage.html">Events</a></li>
+          <li><a href="PhotosPage.html">Photos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <header>
+      <img src="images/FBUseal.jpg" alt="Fontbonne Seal" class="profile-image">
+      <h1 class="tag name">Fontbonne University Hacker's Club</h1>
+      <p class="tag location">Coding + Linux = Access</p>
+    </header>
+
+    <main class="flex">
+      <div class="card">
+        <h2>Background</h2>
+        <p>Our club, founded in 2017, has always been about seeking out young, capable students in Computer/Cyber Security majors that enjoy socializing about computers, code, hacks, linux, and other hacker-esque hobbies.</p>
+        <p>Joining our club is simple. Enter your first name and student ID below and hit "submit":</p>
+			<form action="/action_page.php">
+				  First name:<br>
+				  <input type="text" name="firstname" placeholder="First name">
+				  <br>
+				  Student ID:<br>
+				  <input type="text" name="StudID" placeholder="ID">
+				  <br><br>
+				  <input type="button" value="Submit" onclick="window.location.href='SignupComplete.html'" />
+				</form> 
+      </div> 
+
+      <div class="card">
+        <h2>Goals</h2>
+        <p>Our club has a strong emphasis on accomplishing the following tasks when we meet up as a group:</p>
+        <ul class="skills">
+          <li>Scheduling future meetings</li>
+          <li>Planning events (Hackathon, Capture the Flag competitions, etc.)</li>
+          <li>Sharing ideas and findings regarding hacking discoveries</li>
+          <li>Sharing code and programs</li>
+          <li>Learning and teaching each other new languages</li>
+        </ul>
+      </div> 
+
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#" class="social twitter">Twitter</a></li>
+        <li><a href="#" class="social linkedin">LinkedIn</a></li>
+        <li><a href="#" class="social github">Github</a></li>
+      </ul>
+      <p class="copyright">Copyright 2017, Fontbonne University</p>
+    </footer>
+	<script src="konami.js"></script>
+  </body>
+  </html>

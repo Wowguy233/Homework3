@@ -51,7 +51,7 @@ public class Reigstration_controller {
         catch (Exception ex){
             modelAndView.addObject("message", "Failed to add member: " + ex.getMessage());
         }
-        modelAndView.addObject("attendees", memberService.getMember());
+        modelAndView.addObject("members", memberService.getMember());
         return modelAndView;
     }
 }

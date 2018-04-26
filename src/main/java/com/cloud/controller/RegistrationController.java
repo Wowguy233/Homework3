@@ -20,22 +20,23 @@ public class RegistrationController {
     MemberService  memberService;
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     String home(Model model) {
-        model.addAttribute("members", memberService.getMember());
+        model.addAttribute("member", new Member());
         return "index";
 
     }
-    @RequestMapping(value = "/SignupComplete", method = RequestMethod.GET)
+   /* @RequestMapping(value = "/SignupComplete", method = RequestMethod.GET)
     public String homework4(Model model) {
         model.addAttribute("member", new Member());
         return "SignupComplete";
 
     }
+    */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String register(@ModelAttribute Member member, RedirectAttributes redirectAttributes)
     {
         memberService.addMember(member);
         redirectAttributes.addFlashAttribute("flash", "Registered "+  member.getFirstname() + "Info: " + member.getEmail() + "," + member.getStudentID());
-        return "redirect:/";
+        return "redirect:/index";
     }
 
     @RequestMapping(value = "/admin", method = RequestMethod.POST, consumes = MediaType.ALL_VALUE)

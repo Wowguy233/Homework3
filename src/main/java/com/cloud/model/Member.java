@@ -25,6 +25,7 @@ public class Member {
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
+
     public String getStudentID() {
         return studentID;
     }

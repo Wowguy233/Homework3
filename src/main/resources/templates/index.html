@@ -3,17 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <title>FBU Hacker's club</title>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css"/>
-  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" integrity= "sha384-LjHp+4pQdhuD2Ry5guN5/uf71SpYWhGsZhCLE2KqeAKIywlbodalw7QEXb2CUX1M" crossorigin="anonymous"/>
+  <link rel="stylesheet" type = "text/css" th:href="@{/css/styles.css}"/>
+  <link  rel="stylesheet" type = "text/css" th:href="@{/https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900}" />
 </head>
   <body>
     <div class="main-nav">
-        <ul class="nav">
-          <li class="name">Homepage</li>
-		  <li><a th:href="@{/index.html}">Homepage</a></li>
-          <li><a th:href="@{/Hackers.html}">Hackers</a></li>
+      <ul class="nav justify-content-center">
+          <li class="nav-item"><a class ="index.html active " th:href="@{/index.html}">Homepage</a></li>
+          <li class="nav-item"><a class ="Hackers.html active " th:href="@{/Hackers.html}">Hackers</a></li>
           <li><a th:href="@{/EventsPage.html}">Events</a></li>
           <li><a th:href="@{/PhotosPage.html}">Photos</a></li>
           <li><a href="#">Contact</a></li>
@@ -36,8 +34,8 @@
                   <input type="text" th:field="*{studentID}" class="form-control" placeholder="Studentid" aria-label="StudentID:" aria-describedby="basic-addon2" />
                   <input type="text" th:field="*{email}" class="form-control" placeholder="Email" aria-label="StudentID:" aria-describedby="basic-addon2" />
                   <br/>
-				  <button type="sumbit" value="Submit" onclick="submit" />
-				</form> 
+				  <button type="submit" value="Submit" onclick="submit" />
+				</form>
       </div>
       <div class="card">
         <h2>Goals</h2>
@@ -60,6 +58,6 @@
       </ul>
       <p class="copyright">Copyright 2017, Fontbonne University</p>
     </footer>
-	<script th:src="@{/konami.js}"></script>
+	<script th:src="@{/js/konami.js}"></script>
   </body>
   </html>

@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"/>
   <title>FBU Hacker's club</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Users/HackersStyle.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type = "text/css" th:href="@{/css/HackersStyle.css}"/>
+  <link rel="stylesheet" type = "text/css" th:href="@{/https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900}"/></head>
   <body>
 
     <div class="main-nav">
         <ul class="nav">
           <li class="name">Hackers</li>
-		  <li><a href="index.html">Homepage</a></li>
-          <li><a href="Hackers.html">Hackers</a></li>
-          <li><a href="EventsPage.html">Events</a></li>
-          <li><a href="PhotosPage.html">Photos</a></li>
-          <li><a href="#">Contact</a></li>
+		  <li><a th:href="@{/index.html}">Homepage</a></li>
+          <li><a th:href="@{/Hackers.html}">Hackers</a></li>
+          <li><a th:href="@{/EventsPage.html}">Events</a></li>
+          <li><a th:href="@{/PhotosPage.html}">Photos</a></li>
+          <li><a th:href="@{/#}">Contact</a></li>
         </ul>
     </div>
 
